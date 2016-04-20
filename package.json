@@ -9,6 +9,10 @@
     "build": "make",
     "test": "node test"
   },
+  "files": [
+    "index.js",
+    "physfs.js"
+  ],
   "dependencies": {
     "extend-shallow": "^2.0.1",
     "ffi": "^2.0.0",
