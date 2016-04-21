@@ -1,3 +1,5 @@
+var libphysfs = require('node-physfs-prebuilt');
+
 var FFI = require('ffi'),
     ArrayType = require('ref-array'),
     Struct = require('ref-struct'),
@@ -50,7 +52,7 @@ var PHYSFS_EnumFilesCallback = exports.PHYSFS_EnumFilesCallback = FFI.Function(r
 ]);
 var PHYSFS_EnumFilesCallbackPtr = exports.PHYSFS_EnumFilesCallbackPtr = ref.refType(PHYSFS_EnumFilesCallback);
 
-exports.functions = new FFI.Library('libphysfs', {
+exports.functions = new FFI.Library(libphysfs, {
   PHYSFS_getLinkedVersion: [ref.types.void, [
     PHYSFS_VersionPtr,
   ]],
