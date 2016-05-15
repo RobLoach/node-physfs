@@ -1,6 +1,6 @@
 {
   "name": "node-physfs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Bindings for PhysicsFS (physfs) in Node.js.",
   "main": "index.js",
   "author": "Rob Loach <robloach@gmail.com>",
